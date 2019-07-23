@@ -12,8 +12,8 @@ def get_data(file_name):
     data = pd.read_csv(file_name)  # here ,use pandas to read cvs file.
     X_parameter = []
     Y_parameter = []
-    for single_square_feet, single_price_value in zip(data['area'], data['price']):  # �������ݣ�
-        X_parameter.append([float(single_square_feet)])  # �洢����Ӧ��list�б���
+    for single_square_feet, single_price_value in zip(data['area'], data['price']):  # 遍历数据
+        X_parameter.append([float(single_square_feet)])  # 存储在相应List列表中
         Y_parameter.append(float(single_price_value))
     return X_parameter, Y_parameter
 
